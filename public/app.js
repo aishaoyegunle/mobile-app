@@ -12,7 +12,6 @@ meals.onclick = function () {
 };
 
 let close = document.getElementById("close");
-
 close.onclick = function () {
   let name = "modal__out";
   let classArray = modal1.className.split(" ");
@@ -27,7 +26,6 @@ let modal2 = document.getElementById("myModal2");
 let modalImg = document.getElementById("open-modal2");
 
 modalImg.onclick = function () {
-  console.log("aaa");
   let name = "scale__up";
   let classArray = modalImg.className.split(" ");
   if (classArray.indexOf(name) == -1) {
@@ -43,6 +41,7 @@ modalImg.onclick = function () {
   if (classArrayImg.indexOf(imgName) == -1) {
     modal2.className += " " + imgName;
   }
+  modal2.className = modal2.className.replace(/\bimg__out\b/g, "img__in");
 };
 
 let closeImg = document.getElementById("myModal2");

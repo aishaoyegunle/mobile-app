@@ -277,26 +277,27 @@
 }
 
 .modal__out .modal__meal {
-  transform: scaleY(0.1) scaleX(0.9);
+  transform: scaleY(0.2) scaleX(0.9);
   visibility: hidden;
   transition: all 600ms linear;
-  bottom: 15%;
+  margin-top: 10px;
 }
 
 /* ------------ */
 .scale__up {
-  transform: translateZ(-8.5rem) translateX(13rem) scale(6);
+  transform: translateZ(-8.5rem) translateX(25rem) scale(6);
   z-index: 999;
 }
-.scale__down {
-  transform: translateZ(8.5rem) translateX(1) scale(1);
-  z-index: -1;
+@media only screen and (max-width: 400px) {
+  .scale__up {
+    transform: translateZ(-8.5rem) translateX(13rem) scale(6);
+    z-index: 999;
+  }
 }
 
-.modal__item .img--small {
-  width: 60px;
-  border-radius: 15px;
-  transition: all 500ms linear;
+.scale__down {
+  transform: translateZ(8.5rem) translateX(1) scale(1);
+  z-index: 1;
 }
 
 .img__in {
@@ -309,17 +310,22 @@
   visibility: hidden;
   transition: all 1s linear;
 }
+
+.modal__item .img--small {
+  width: 60px;
+  border-radius: 15px;
+  transition: all 500ms ease;
+}
 /* ----------- */
 .modal {
   background: #fff;
 }
 .modal__meal {
-  bottom: 0;
   width: 100%;
-  position: absolute;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   transform: scaleY(0.4) scaleX(0.9);
+  margin-top: 15vh;
 }
 .modal__img {
   display: flex;
@@ -383,6 +389,7 @@
   flex-basis: 80%;
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
 }
 
 .modal__item figcaption h4 {
@@ -396,5 +403,4 @@
   line-height: 24px;
   color: #6c6c6c;
   font-weight: lighter;
-  margin-left: 20px;
 }

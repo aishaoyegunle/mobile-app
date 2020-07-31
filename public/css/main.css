@@ -32,13 +32,13 @@
 .header__profile {
   display: flex;
   align-items: center;
-  gap: 15px;
   color: var(--black-color);
   margin-bottom: 25px;
   margin-top: 20px;
 }
 .header__profile-title {
   font-size: 1.7em;
+  margin-left: 10px;
 }
 .header__title {
   display: flex;
@@ -223,7 +223,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
   color: var(--black-color);
   font-family: "Cerebri Sans", sans-serif;
 }
@@ -244,6 +243,7 @@
   padding: 13px;
   font-size: 1.5em;
   font-weight: 300;
+  margin-left: 10px;
 }
 
 .container__modal {
@@ -373,7 +373,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
   font-family: "Cerebri Sans", sans-serif;
 }
 
@@ -397,4 +396,5 @@
   line-height: 24px;
   color: #6c6c6c;
   font-weight: lighter;
+  margin-left: 20px;
 }

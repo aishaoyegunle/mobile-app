@@ -409,13 +409,14 @@
   color: #303030;
   font-size: 1.8em;
   line-height: 24px;
+  font-weight: 300;
 }
 
 .modal__item figcaption p {
   font-size: 1.5em;
   line-height: 24px;
   color: #6c6c6c;
-  font-weight: lighter;
+  font-weight: 300;
 }
 .footer {
   position: absolute;

@@ -327,7 +327,7 @@
 .modal__item .img--small {
   width: 60px;
   border-radius: 15px;
-  transition: all 500ms ease;
+  transition: transform 500ms ease;
 }
 /* ----------- */
 .modal {

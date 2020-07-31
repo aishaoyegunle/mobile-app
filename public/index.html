@@ -6,70 +6,72 @@
     <title></title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body class="container">
-    <header class="header">
-      <div class="header__profile">
-        <img src="image/avatar.png" alt="user image" />
-        <p class="header__profile-title">Good Morning Silm!</p>
-      </div>
-      <div class="header__title">
-        <h3>Schedule</h3>
-        <button class="header__title-btn">Reconfigure Services</button>
-      </div>
-    </header>
-    <section>
-      <button class="info">
-        <div class="info__title">
-          <p>Your account is inactive.</p>
-          <p><b>15% off </b>offer until June 23.</p>
+  <body class="body">
+    <main class="container">
+      <header class="header">
+        <div class="header__profile">
+          <img src="image/avatar.png" alt="user image" />
+          <p class="header__profile-title">Good Morning Silm!</p>
         </div>
-        <div class="info__price">
-          <p>N75,000</p>
-          <p>Pay N62,800</p>
+        <div class="header__title">
+          <h3>Schedule</h3>
+          <button class="header__title-btn">Reconfigure Services</button>
         </div>
-      </button>
-
-      <button class="meal" id="open-modal1">
-        <p>View your meals for the week.</p>
-        <p>Check ‘em</p>
-      </button>
-
-      <section class="contact">
-        <h4>Getting Started</h4>
-        <p>Let’s answer any questions you have left!</p>
-        <div class="contact__details">
-          <div class="contact__details-info">
-            <img src="image/call.png" alt="call" class="call" />
-            <p>Set up a call with your gardener</p>
-            <a href="#">
-              <span>Do it</span>
-              <img src="image/chevron-purple.png" alt="do it" />
-            </a>
+      </header>
+      <section>
+        <button class="info">
+          <div class="info__title">
+            <p>Your account is inactive.</p>
+            <p><b>15% off </b>offer until June 23.</p>
           </div>
-
-          <div class="contact__details-play">
-            <img src="image/play.png" alt="play" class="play" />
-            <p>Lose yourself to this video</p>
-            <a href="#">
-              <span>Play</span>
-              <img src="image/chevron-orange.png" alt="play" />
-            </a>
+          <div class="info__price">
+            <p>N75,000</p>
+            <p>Pay N62,800</p>
           </div>
-        </div>
-      </section>
+        </button>
 
-      <section class="upcoming">
-        <h6 class="upcoming__title">
-          Tomorrow
-        </h6>
-        <div class="upcoming__info">
-          <p class="upcoming__info-time">9 - 10am</p>
-          <p class="upcoming__info-event">
-            Your cleaner is coming in to give your apartment the looks.
-          </p>
-        </div>
+        <button class="meal" id="open-modal1">
+          <p>View your meals for the week.</p>
+          <p>Check ‘em</p>
+        </button>
+
+        <section class="contact">
+          <h4>Getting Started</h4>
+          <p>Let’s answer any questions you have left!</p>
+          <div class="contact__details">
+            <div class="contact__details-info">
+              <img src="image/call.png" alt="call" class="call" />
+              <p>Set up a call with your gardener</p>
+              <a href="#">
+                <span>Do it</span>
+                <img src="image/chevron-purple.png" alt="do it" />
+              </a>
+            </div>
+
+            <div class="contact__details-play">
+              <img src="image/play.png" alt="play" class="play" />
+              <p>Lose yourself to this video</p>
+              <a href="#">
+                <span>Play</span>
+                <img src="image/chevron-orange.png" alt="play" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="upcoming">
+          <h6 class="upcoming__title">
+            Tomorrow
+          </h6>
+          <div class="upcoming__info">
+            <p class="upcoming__info-time">9 - 10am</p>
+            <p class="upcoming__info-event">
+              Your cleaner is coming in to give your apartment the looks.
+            </p>
+          </div>
+        </section>
       </section>
-    </section>
+    </main>
 
     <div id="myModal1" class="container__modal">
       <div class="modal modal__meal">
@@ -146,11 +148,26 @@
       </div>
     </div>
 
-    <!-- <div id="myModal2" class="container__modal bg__close"> -->
-    <!-- <div class="modal modal__img">
-        <img src="image/meal3-lg.jpg" alt="meal3" class="full__img" />
-      </div> -->
-    <!-- </div> -->
+    <footer class="footer">
+      <ul>
+        <li>
+          <img src="image/calendar.png" alt="calender" />
+          <p>Schedule</p>
+        </li>
+        <li>
+          <img src="image/history.png" alt="history" />
+          <p>History</p>
+        </li>
+        <li>
+          <img src="image/notification.png" alt="notification" />
+          <p>Notifications</p>
+        </li>
+        <li>
+          <img src="image/chat.png" alt="chat" />
+          <p>Chat</p>
+        </li>
+      </ul>
+    </footer>
 
     <!--  -->
     <script src="app.js"></script>

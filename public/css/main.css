@@ -34,13 +34,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 .container {
   font-family: "PT Serif", serif;
   background-color: var(--main-bg-color);
   padding: 20px;
   overflow: auto;
+  height: 100vh;
 }
 .header__profile {
   display: flex;

@@ -29,7 +29,7 @@
         </div>
       </button>
 
-      <button class="meal">
+      <button class="meal" id="open-modal1">
         <p>View your meals for the week.</p>
         <p>Check ‘em</p>
       </button>
@@ -39,7 +39,7 @@
         <p>Let’s answer any questions you have left!</p>
         <div class="contact__details">
           <div class="contact__details-info">
-            <img src="image/play.png" alt="call" class="play" />
+            <img src="image/call.png" alt="call" class="call" />
             <p>Set up a call with your gardener</p>
             <a href="#">
               <span>Do it</span>
@@ -71,73 +71,79 @@
       </section>
     </section>
 
-    <div class="modal">
-      <header class="modal__header">
-        <h3>Today’s Meals</h3>
-        <button><img src="image/close.png" alt="close" /></button>
-      </header>
-      <section>
-        <ul>
-          <li>
-            <figure class="modal__item">
-              <img src="image/meal1.jpg" alt="meal1" />
-              <figcaption>
-                <h4>Akara & Pap</h4>
-                <p>Carbohydrate</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="modal__item">
-              <img src="image/meal2.jpg" alt="meal2" />
-              <figcaption>
-                <h4>Jollof Rice</h4>
-                <p>Protein</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="modal__item">
-              <img src="image/meal3.jpg" alt="meal3" />
-              <figcaption>
-                <h4>Gastonton</h4>
-                <p>Carbohydrate</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="modal__item">
-              <img src="image/meal4.jpg" alt="meal4" />
-              <figcaption>
-                <h4>Port Domenic</h4>
-                <p>Carbohydrate</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="modal__item">
-              <img src="image/meal5.jpg" alt="meal5" />
-              <figcaption>
-                <h4>Carleeville</h4>
-                <p>Fat & Oils</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="modal__item">
-              <img src="image/meal6.jpg" alt="meal6" />
-              <figcaption>
-                <h4>South Chesleyton</h4>
-                <p>Vegetable</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </section>
+    <div id="myModal1" class="container__modal">
+      <div class="modal modal__meal">
+        <header class="modal__header">
+          <h3>Today’s Meals</h3>
+          <button class="close" id="close">
+            <img src="image/close.png" alt="close" />
+          </button>
+        </header>
+        <section>
+          <ul>
+            <li>
+              <figure class="modal__item">
+                <img src="image/meal1.jpg" alt="meal1" />
+                <figcaption>
+                  <h4>Akara & Pap</h4>
+                  <p>Carbohydrate</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="modal__item">
+                <img src="image/meal2.jpg" alt="meal2" />
+                <figcaption>
+                  <h4>Jollof Rice</h4>
+                  <p>Protein</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li id="open-modal2">
+              <figure class="modal__item">
+                <img src="image/meal3.jpg" alt="meal3" />
+                <figcaption>
+                  <h4>Gastonton</h4>
+                  <p>Carbohydrate</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="modal__item">
+                <img src="image/meal4.jpg" alt="meal4" />
+                <figcaption>
+                  <h4>Port Domenic</h4>
+                  <p>Carbohydrate</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="modal__item">
+                <img src="image/meal5.jpg" alt="meal5" />
+                <figcaption>
+                  <h4>Carleeville</h4>
+                  <p>Fat & Oils</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="modal__item">
+                <img src="image/meal6.jpg" alt="meal6" />
+                <figcaption>
+                  <h4>South Chesleyton</h4>
+                  <p>Vegetable</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
 
-    <div class="modal">
-      <!-- <img src="image/meal3-lg.jpg" alt="meal3" /> -->
+    <div id="myModal2" class="container__modal bg__close">
+      <div class="modal modal__img">
+        <img src="image/meal3-lg.jpg" alt="meal3" class="full__img" />
+      </div>
     </div>
 
     <!--  -->
